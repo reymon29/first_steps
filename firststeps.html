@@ -4,13 +4,69 @@
   <meta charset="UTF-8">
   <title>First Steps in JavaScript</title>
   <script type="text/javascript">
-    var currentYear = 2016;
-    var yearOfBirth = 1988;
-    var age = currentYear - yearOfBirth;
-    var firstName = "Rey";
-    var lastName = "Montemayor";
-    var fullName = firstName +" "+lastName;
-    document.write("My name is " + fullName + "age " + age);
+
+    /*var months = ["Jan", "Feb", "March", "April", "May", "June"];
+    months.push("Aug", "Sep", "Oct", "Nov", "Dec", "Jan");
+    months.pop();
+    months.unshift("Sext");
+    months.shift();
+    document.write("The number of the items in the array is:", months.length);*/
+    // var age = prompt("What is your age?", "");
+    // if(age < 18) {
+    //   document.write("You can enter the website.");
+    // } else {
+    //   document.write("You are too old!");
+    // }
+    /*var money = prompt("How much money do you have in your pocket?", "");
+    if(money < 20){
+      document.write("That is not enough. Go to the ATM to get some more.");
+    } else if(money == 20){
+      document.write("Exactly 20? That's great, buy me a nice burger meal.");
+    } else {
+      document.write("You shouldn't carry so much money around. Give some to me.");
+    }*/
+    // var gender = prompt("What is your gender?", "");
+    // var age = prompt("What is your gender?", "");
+    // if((gender == "female") && (age >= 18)){
+    //   document.write("Please enter. Hope you brought a nice gift");
+    // } else if(gender == "male"){
+    //   document.write("This is a bachelorette party. No guys allowed.");
+    // } else {
+    //   docuement.write("You are probably too young to enter. Come back in a few years.");
+    // }
+    // var age = 1;
+    // while(age < 18){
+    //   document.write("Another year has passed. You are now"+ age + "years old. <br>");
+    //     age = age + 1;
+    // }
+    // document.write(age+"? congratulations! You are now an adult.");
+    // for(var age = 1; age < 18; age++){
+    //   document.write("Another year has passed. You are now "+age+"years old.<br>");
+    // }
+    // document.write(age+"? Congratulations! You are now an adult.");
+    // var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    // var counter = 0;
+    // while(counter < months.length){
+    //   document.write(months[counter]+ " ");
+    //     counter++;
+    // }
+    // var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    // for(var counter = 0; counter < months.length; counter++){
+    //   document.write(months[counter]+ " ");
+    // }
+    // function writeText(){
+    //   document.write("The answer is 42.");
+    // }
+    // writeText();
+    function checkAge(){
+      if(age >= 18){
+        document.write("You have reached the age of wisdom, please enter and have some fun.");
+      } else {
+        document.write("Please come back in a few years.");
+      }
+    }
+    var age = prompt("How old are you?");
+    checkAge();
   </script>
 </head>
 <body>

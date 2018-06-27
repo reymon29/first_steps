@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>First Steps in JavaScript</title>
   <script type="text/javascript">
-
     /*var months = ["Jan", "Feb", "March", "April", "May", "June"];
     months.push("Aug", "Sep", "Oct", "Nov", "Dec", "Jan");
     months.pop();
@@ -58,15 +57,92 @@
     //   document.write("The answer is 42.");
     // }
     // writeText();
-    function checkAge(){
-      if(age >= 18){
-        document.write("You have reached the age of wisdom, please enter and have some fun.");
-      } else {
-        document.write("Please come back in a few years.");
-      }
+    // function checkAge(){
+    //   if(age >= 18){
+    //     document.write("You have reached the age of wisdom, please enter and have some fun.");
+    //   } else {
+    //     document.write("Please come back in a few years.");
+    //   }
+    // }
+    // var age = prompt("How old are you?");
+    // checkAge();
+    // function checkAge(){
+    //   var difference;
+    //   if(age >= 18){
+    //     document.write("You have reached the age of wisdom, please enter and have ssome fun.");
+    //   } else {
+    //     difference = 18 - age;
+    //     document.write("Please come back in "+difference+"years.");
+    //   }
+    // }
+    // var age = prompt("How old are you?","");
+    // checkAge();
+    // function print(message){
+    //   document.write(message);
+    // }
+    // print("<p>What are you doing? document.write is a perfect command.</p>");
+    // print("<p>42 is the answer, but what is the question?</p>");
+  // function checkAge(name, years){
+  //   if(years < 18){
+  //     document.write(name+" you are too young to enter.<br>");
+  //   } else {
+  //     document.write(name+ "you are above 18. Please come in.<br>");
+  //   }
+  // }
+  // checkAge("Jack", 80);
+  // checkAge("Alicia", 8);
+  // checkAge("Simonetta", 15);
+  // checkAge("Geronimo", 30);
+  // function checkPrice(price, discount){
+  //   var total = price - price*discount/100;
+  //   return total;
+  // }
+  // var actualPrice = checkPrice(200, 20);
+  // document.write("The discount price of the product exclusing VAT is "+actualPrice);
+  // var drinks = 0;
+  // var barDrinks = 0;
+  // var clubDrinks = 0;
+  // function nightOut(){
+  //   var barDrinks = 3;
+  //   var clubDrinks = 5;
+  //   var drinks = barDrinks + clubDrinks;
+  //   document.write("<p>Bar drinks in the function ", + barDrinks);
+  //   document.write("<p>Club drinks in the function ", + clubDrinks);
+  //   document.write("<p>Drinks drinks in the function ", + drinks);
+  // }
+  // nightOut();
+  // document.write("<p>Bar drinks on the outside", + barDrinks);
+  // document.write("<p>Club drinks on the outside", clubDrinks);
+  // document.write("<p>Drinks on the outside", + drinks);
+  // var car = new Object();
+  // car.color = "red";
+  // car.make = "Ford";
+  // car.model = "Mustang";
+  // car.startCar = function(){
+  //   document.write("The engine has started.<br>");
+  //   document.write("You are driving a "+car.color+" "+car.make+" "+car.model);
+  // }
+  // car.changeColor = function(otherColor){
+  //   this.color = otherColor;
+  //   document.write("<p>This car is now "+this.color);
+  // }
+  //   car.startCar();
+  //   document.write("<p>The current color of the car is "+car.color+"<br>");
+  //   car.changeColor("blue");
+  var car = {
+    color: "red",
+    make: "Ford",
+    model: "Mustang",
+    startCar: function(){
+      document.write("The engine has started.<br>");
+    },
+    changeColor: function(otherColor){
+      this.color = otherColor;
+      document.write("The care is now "+this.color);
     }
-    var age = prompt("How old are you?");
-    checkAge();
+  }
+  car.startCar();
+  car.changeColor("blue");
   </script>
 </head>
 <body>

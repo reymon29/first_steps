@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Party Schedule</title>
+  <style type="text/css">
+    .current {
+    color: red;
+  }
+  .finished{
+    color: green;
+  }
+  </style>
+
+</head>
+<body>
+  <h1 id="partytitle">Party Plan</h1>
+  <ul id="partyplan">
+    <li class="example" id="phase1">20:00 - Home warm-up</li>
+    <li class="example" id="phase2">22:00 - Joe's Bar</li>
+    <li class="example" id="phase3">00:00 - Nightclub 54</li>
+  </ul>
+  <script type="text/javascript">
+    var firstStop = document.getElementById("phase1").className = "current";
+    var title = document.getElementById("partytitle");
+    title.textContent = "Party Schedule";
+
+    var schedule = document.getElementsByTagName("li");
+    for(var i = 0; i < schedule.length; i++){
+      schedule[i].className = "finished";
+    }
+
+    var firstStop = document.getElementById("phase1");
+    firstStop.innerHTML = "<em>20:00 - Home warm-up</em>";
+  </script>
+</body>
+</html>

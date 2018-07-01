@@ -32,6 +32,14 @@
 
     var firstStop = document.getElementById("phase1");
     firstStop.innerHTML = "<em>20:00 - Home warm-up</em>";
+
+    // var newPlan = document.createElement("li");
+    // var newPlanText = document.createTextNode("04:00 - Back to home");
+    // newPlan.appendChild(newPlanText);
+    // document.getElementById("partyplan").appendChild("newPlan");
+    var removeHeading = document.getElementById("partytitle");
+    var containerForHeading = removeHeading.parentNode;
+    containerForHeading.removeChild(removeHeading);
   </script>
 </body>
 </html>

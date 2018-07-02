@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Party Schedule</title>
+  <style type="text/css">
+    .current {
+      color: red;
+    }
+    .finished {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="partytitle">Party Plan</h1>
+  <ul id="partyplan">
+    <li id="phase1">20:00 - <a href="#" id="testLink">Home warm-up</a></li>
+    <li id="phase2">22:00 - Joe's Bar</li>
+    <li id="phase3">00:00 - Nightclub 54</li>
+  </ul>
+  <script type="text/javascript">
+    /*function linkClick(){
+      this.className ="current";
+    }
+     var firstLink = document.getElementById("testLink");
+    */
+     // firstLink.onclick = linkClick;
+     // document.getElementById("testLink").onclick = function linkClick(){
+     //    this.className = "current";
+     // }
+     // function linkClick(){
+     //  this.className = "current";
+     //  this.textContent = "Party Finished";
+     // }
+     // var firstLink = document.getElementById("testLink");
+     // firstLink.onclick = linkClick;
+     function linkClick(){
+      this.className = "current";
+      this.textContent = "Party Finished";
+     }
+     var firstLink = document.getElementById("testLink");
+     firstLink.addEventListener("click", linkClick);
+  </script>
+</body>
+</html>
